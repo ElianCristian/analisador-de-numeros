@@ -27,9 +27,15 @@ function inLista(n, vet) {
 
 function Adicionar() {
     if (isNumero(num.value) && !inLista(num.value, vetor)){
-        alert('Tudo Ok')
+        vetor.push(Number(num.value))
+        let pos = vetor.length
+        let item = document.createElement('option')
+        item.text = `Inserido o ${vetor[pos -1]}`
+        lista.appendChild(item)
     }
     else{
-        alert('Valor invalido ou já se encontra na lista')
+        alert(`[${Number(num.value)}] Valor invalido ou já se encontra na lista`)
     }
+    num.value = ''
+    num.focus()
 }
