@@ -16,8 +16,11 @@ section{
     box-shadow: 5px 5px 10pt rgba(0, 0, 0, 0.335);
 }
 div {
-    text-align: center;
+    text-align: left;
     padding: 8px;
+}
+select#lista{
+    width: 200px;
 }
 footer{
     color: white;
